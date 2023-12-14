@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(5, 10, 24);
+    display: flex; 
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    width: 100%;
+
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+
+
+}
+.about{
+    color:#747083;
+    transition: 0.5s;
+    
+}
+.about:hover{
+color: white;
+transition: 0.5s;
+}
+.work{
+    color:#747083;
+
+}
+.work:hover{
+    color: #530bec;
+
+    transition: 0.5s;
+    }
+.new{
+    padding-left: 75px;
+position: absolute;
+    font-family:'Space Grotesk', sans-serif;
+    letter-spacing: -4px;
+    font-size: 40px ;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+.new:hover{
+color: #530bec;
+    transition: 0.5s;
+
+}
+.link{
+    color:#747083;
+    transition: 0.5s;
+
+}
+.link:hover{
+    color: white;
+    transition: 0.5s;
+}
+.nav_logo{
+    padding: 17px 10px 10px 19px;
+    display: flex;
+flex-basis: calc(100%/3);
+
+
+}
+.nav_text{
+    padding: 2rem 1rem;
+    display: flex;
+    gap: 7rem;
+    flex-basis: calc(100%/3);
+    justify-content: center;
+    border-left: 1px solid rgb(255, 255, 255, 0.1); ;
+}
+.nav_icon{
+    padding: 2rem 1rem;
+    display: flex;
+    width: 100px;
+    border-left: 1px solid rgb(255, 255, 255, 0.1); ;
+    flex-grow: 1;
+    font-size: 25px;
+    justify-content: end;
+    word-spacing: 30px;
+    letter-spacing: 30px;
+align-items: center;
+}
+.nav_contact{
+    padding: 2rem 1rem;
+    display: flex;
+    border-left: 1px solid rgb(255, 255, 255, 0.1);
+    flex-grow: 1;
+    justify-content: center;
+
+
+}
+h1,h2,a,p{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+text-decoration: none;
+}
+main{
+    display: grid;
+    height: 100%;
+
+}
+article{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+
+}
+.im{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.article_img{
+height: 100%;
+border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+width: 100%;
+transition: 1s;
+-webkit-animation: color 10s ease-in-out infinite;
+animation: color 10s ease-in-out infinite ;
+}
+@-webkit-keyframes coloe{
+
+    0%{
+background-color: rgb(5, 10, 24);
+    }
+    10%{
+        background-color: #242B3C;
+    }
+    20%{
+        background-color: #D4C8C7;    }
+    30%{
+        background-color: #7C747A;}
+    40%{
+        background-color: #8D9A99;
+    }
+    50%{
+        background-color: #67525E;
+    }
+    60%{
+        background-color: #A99999;
+    }
+    70%{
+        background-color: #A7918A;
+    }
+    80%{
+        background-color: #67605B;
+    }
+    90%{
+        background-color: #5C9495;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+.hand{
+
+    width: 60px;
+    font-size: 60px;
+    position: absolute;
+    margin: 224px 20px 19px 29px;
+    transition: 0.3s;
+
+}
+
+
+
+
+.article_desc{
+    height: 100%;
+border-left: 1px solid rgb(255, 255, 255, 0.1);
+
+}
+.cont{
+    font-family: 'Space Grotesk', sans-serif;
+    color: #747083;
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+    /* margin-top: 319px; */
+    margin: 310px 46px 13px 24px;
+    transition: 0.3s;
+}
+.article_desc:hover{
+background-color: rgb(11, 15, 28);
+
+}
+.article_desc:hover .cont{
+    color: white;
+    margin: 300px 46px 13px 24px;
+
+}
+.article_desc:hover .hand{
+    color: white;
+    margin: 210px 20px 19px 29px;
+    transform: rotate(15deg);
+
+}
+
+
+
+.article_title{
+    height: 100%;
+border-right: 1px solid rgb(255, 255, 255, 0.1);
+
+}
+         
+
+.article_nav{
+    height: 100%;
+border-top: 1px solid rgb(255, 255, 255, 0.1);
+
+}
+         
+img{
+    overflow: hidden;
+    object-fit: cover;
+height: 463px;
+border-radius: 50%;
+position: relative;
+-webkit-animation: circle 5s ease-in-out infinite 2s;
+animation: circle 5s ease-in-out infinite 2s;
+}
+@-webkit-keyframes circle{
+
+    0%{
+left: 0px;
+transform: rotate(0deg);
+    }
+    25%{
+        left: 250px;
+        transform: rotate(180deg);}
+    50%{
+left: 500px;
+transform: rotate(360deg);
+    }
+    75%{
+        left: 250px;
+        transform: rotate(180deg);}
+    100%{
+        left: 0px;
+        transform: rotate(0deg);
+    }
+}
+.deve{
+    font-size: 100px;
+    font-family: 'Space Grotesk', sans-serif;
+
+padding: 30px 700px 0px 60px;
+line-height: 90px;
+font-weight: 900;
+
+}
+.por{
+    object-fit: cover;
+    overflow: hidden;
+    width: 66%;
+    height: 100%;
+    position: absolute;
+    transition: 0.3s;
+    display: flex;
+
+}
+
+.words{
+    transition: 0.5s;
+
+    width: 700px;
+}
+.words:hover{
+    overflow: hidden;
+
+    -webkit-animation: up 1s  ;
+    animation: up ;
+    transform: translateY(-28%)
+}
+@keyframes up{
+    0%{
+        transform: translateY(0%);
+    }
+    
+    100%{
+
+    }
+}
+.flip{
+    font-size: 100px;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 30px 250px 0px 60px;
+line-height: 90px;
+font-weight: 900;
+}
+.cross{
+
+    font-size: 150px;
+    height: 150px;
+    margin: 40px 20px 20px 30px;
+    transition: 0.5s;
+}
+.cross:hover{
+    -webkit-animation: move 1s  ;
+    animation: move ;
+    transform: rotate(90deg);
+
+}
+.por:hover .words{
+    overflow: hidden;
+
+    -webkit-animation: up 1s  ;
+    animation: up ;
+    transform: translateY(-28%)
+    
+}
+.por:hover .cross{
+    -webkit-animation: move 1s  ;
+    animation: move ;
+    transform: rotate(90deg);
+}
+
+
+.proj{
+
+    width: 200px;
+    height: 70px;
+    display: flex;
+    gap: 10px;
+margin: 80px 19px 20px 65px;
+
+
+}
+.nam{
+    font-size: 50px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bolder;
+    transition: 0.5s;
+    color: #747083;
+}
+.arr{
+    font-size: 65px;
+}
+.article_nav{
+    justify-content: center;
+}
+.article_nav:hover .proj{
+
+letter-spacing: 8px;
+
+
+}
+.article_nav:hover .nam{
+
+color: white;
+    
+    
+    }
+.nav_contact:hover .data{
+    transition: 0.3s;
+color: #530bec;
+}
+.back{
+
+    width: 100%;
+    height: 100%;
+
+-webkit-animation: back ease-in-out 5s infinite 2s;
+animation: back ease-in-out 5s infinite 2s ;
+}
+@keyframes back{
+    0%{
+        width: 0%;
+        background-color: rgb(103, 0, 246);
+
+
+    }
+    25%{
+        width: 50%;
+        background-color: rgb(103, 0, 246);
+
+    }
+    50%{
+        width: 100%;
+
+    }
+    75%{
+        background-color: white;
+        width: 50%;
+    }
+    100%{
+        background-color: rgb(5, 10, 24);
+
+
+        width: 0%;
+    }
+}
